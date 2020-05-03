@@ -1,32 +1,32 @@
 import React from 'react';
 import {Link, NavLink} from 'react-router-dom';
-import {Button, Container, H1, Input, Form, Label, Title, Ul, Li, NavContainer} from './style';
+import {Button, Container, H1, Input, Form, Label, Title, Ul, Li, NavContainer} from './styles';
 
 const Navbar =() => {
   const underline = {textDecoration: "none"};
-  const textColor = {color: 'white'};
+  const textColor = {color: 'grey'};
 
   return (
-    <NavContainer>
-    <Title>COVID-19 Testing Location Insights</Title>
-      <Ul>
-        <Li>
+    <div>
+      <div>LOGO</div>
+      <ul>
+        <li>
           <NavLink to="/" style={{ ...underline, ...textColor }}>
             Home
           </NavLink>
-        </Li>
-        <Li>
+        </li>
+        <li>
           <NavLink to="UserForm" style={{ ...underline, ...textColor }}>
-            User
+            User Signup
           </NavLink>
-        </Li>
-        <Li>
-          <NavLink to="ProviderForm" style={{ ...underline, ...textColor }}>
-            Provider
+        </li>
+        <li>
+          <NavLink to="MentorForm" style={{ ...underline, ...textColor }}>
+            Mentor Signup
           </NavLink>
-        </Li>
-      </Ul>
-    </NavContainer>
+        </li>
+      </ul>
+    </div>
   );
 }
 
