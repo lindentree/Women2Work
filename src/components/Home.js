@@ -29,7 +29,7 @@ class Home extends React.Component {
         </div>
 
         <div className="item-e">
-                  <h3>[Picture here]</h3>
+          <h3>[Picture here]</h3>
           <h4>Certified Mentor Badge</h4>
           <p>
             Mentors who complete the certification process will receive a certified mentor badge they can proudly present on LinkedIn.

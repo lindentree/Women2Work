@@ -13,7 +13,7 @@ const Navbar = () => {
       <ul className="navUl">
         <li className="navLi">
           <NavLink to="/" style={{ ...underline, ...textColor }}>
-            Home
+            About
           </NavLink>
         </li>
         <li className="navLi">
