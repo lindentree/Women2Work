@@ -1,27 +1,28 @@
 import React from 'react';
 import {Link, NavLink} from 'react-router-dom';
-import {Button, Container, H1, Input, Form, Label, Title, Ul, Li, NavContainer} from './styles';
+import styles from '../styles.css';
 
-const Navbar =() => {
+
+const Navbar = () => {
   const underline = {textDecoration: "none"};
-  const textColor = {color: 'grey'};
+  const textColor = {color: "#3EC6FF"};
 
   return (
-    <div>
+    <div className="navbar">
       <div>LOGO</div>
-      <ul>
-        <li>
+      <ul className="navUl">
+        <li className="navLi">
           <NavLink to="/" style={{ ...underline, ...textColor }}>
             Home
           </NavLink>
         </li>
-        <li>
-          <NavLink to="UserForm" style={{ ...underline, ...textColor }}>
+        <li className="navLi">
+          <NavLink to="UserSignup" style={{ ...underline, ...textColor }}>
             User Signup
           </NavLink>
         </li>
-        <li>
-          <NavLink to="MentorForm" style={{ ...underline, ...textColor }}>
+        <li className="navLi">
+          <NavLink to="MentorSignup" style={{ ...underline, ...textColor }}>
             Mentor Signup
           </NavLink>
         </li>

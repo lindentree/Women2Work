@@ -1,10 +1,8 @@
 import React from 'react';
-import './App.css';
+import styles from './styles.css';
 import LandingPage from './components/LandingPage';
 
 class App extends React.Component {
-
-
 
   render() {
     return (
@@ -15,6 +13,7 @@ class App extends React.Component {
       </div>
     );
   }
+
 }
 
 export default App;
