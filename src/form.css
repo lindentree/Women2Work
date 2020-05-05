@@ -40,13 +40,28 @@ input {
   border: 1px solid #ccc;
   box-sizing: border-box;
   background-color: white;
+  margin-top: 8px;
+  border-radius: 3px;
+}
+
+textarea {
+  width: 80%;
+  height: 60px;
+  padding: 10px 20px;
+  margin: 20px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: white;
+  margin-top: 8px;
+  border-radius: 3px;
 }
 
 label {
   float: left;
   text-align: left;
   width: 450px;
-  font-size: 10px;
+  font-size: 11px;
   color: #656D78;
 }
 
@@ -68,4 +83,8 @@ label {
   color: white;
   background-color: #4A89DC;
   margin-top: 20px
+}
+
+span {
+  color: #4A89DC
 }

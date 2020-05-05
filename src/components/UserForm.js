@@ -46,7 +46,8 @@ class UserForm extends React.Component {
       <div className="form-container">
         <div className="item-11">
           <p className="first-line">
-            You need just 30 seconds to just tell us about who you are a human:
+            You need just 30 seconds to
+            <span> just tell us about who you are a human:</span>
           </p>
           <p className="second-line">
             Don’t worry, you can edit your Profile at anytime.
@@ -59,19 +60,33 @@ class UserForm extends React.Component {
             <input type="text" name="userName" placeholder="Jane Doe" onChange={this.handleInput} />
 
             <label>Email:</label>
-            <input type="email" name="email" placeholder="janedoe@gmail.com" onChange={this.handleInput}  />
+            < input type = "email"
+            name = "email"
+            placeholder = "janedoe@gmail.com"
+            autoComplete = "off"
+            onChange={this.handleInput}  />
 
             <label>Job Title:</label>
-            <input type="text" name="jobTitle" placeholder="Jr.Software Developer" onChange={this.handleInput}  />
+            < input type = "text"
+            name = "jobTitle"
+            placeholder = "Jr.Software Developer"
+            autoComplete = "off"
+            onChange={this.handleInput}  />
 
             <label>Professional skills I want to learn:</label>
-            <input type="text" name="skills" placeholder="Skills" onChange={this.handleInput}  />
+            <input type="text" name="skills" placeholder="Skills"
+            autoComplete="off"
+            onChange={this.handleInput}  />
 
             <label>Interests & Hobbies:</label>
-            <input type="text" name="interests" placeholder="Interests & Hobbies:" onChange={this.handleInput}  />
+            <input type="text" name="interests" placeholder="Interests & Hobbies:"
+            autoComplete="off"
+            onChange={this.handleInput}  />
 
             <label>What I need in my personal life:</label>
-            <input type="text" name="needs" placeholder="During this Covid-19 pandemic, it has been difficult to look after my children while I’m job hunting.  I would love to connect with working professionals and how they balance work and family." onChange={this.handleInput}  />
+            <textarea type="text" name="needs" placeholder="During this Covid-19 pandemic, it has been difficult to look after my children while I’m job hunting.  I would love to connect with working professionals and how they balance work and family."
+            autoComplete="off"
+            onChange={this.handleInput}  />
 
             <button className="connect-button">Ready for connection!</button>
           </form>
