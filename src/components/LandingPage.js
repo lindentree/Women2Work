@@ -6,6 +6,7 @@ import MentorSignup from './MentorSignup';
 import UserSignup from './UserSignup';
 import Navbar from './Navbar';
 import UserForm from './UserForm';
+import MentorForm from './MentorForm';
 
 
 class LandingPage extends React.Component {
@@ -21,6 +22,7 @@ class LandingPage extends React.Component {
             <Route path='/MentorSignup' component={MentorSignup} />
             <Route path='/UserSignup' component={UserSignup} />
             <Route path='/UserForm' component={UserForm} />
+            <Route path='/MentorForm' component={MentorForm} />
           </Switch>
         </BrowserRouter>
 

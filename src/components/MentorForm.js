@@ -1,11 +1,15 @@
 import React from 'react';
 import axios from 'axios';
+import LandingPage from './LandingPage';
+import {Link, NavLink} from 'react-router-dom';
+import form from '../form.css';
+import profile from '../images/profile.png';
 
 class MentorForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      mentorName: '',
+      userName: '',
       email: '',
       jobTitle: '',
       skills: [],
@@ -25,10 +29,10 @@ class MentorForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     console.log('this.state --', this.state);
-    let {mentorName, email, jobTitle, skills, interests, needs} = this.state;
-    let data = {mentorName, email, jobTitle, skills, interests, needs};
+    let {userName, email, jobTitle, skills, interests, needs} = this.state;
+    let data = {userName, email, jobTitle, skills, interests, needs};
     let headers = {'Content-Type': 'application/json'};
-    axios.post('/mentor', data, {headers: headers})
+    axios.post('/user', data, {headers: headers})
       .then(res => {
         console.log('axios.post: data--', data);
       })
@@ -40,24 +44,58 @@ class MentorForm extends React.Component {
 
   render() {
     return (
-      <div>
-        <div>
-          <h1>User form</h1>
-          <form onSubmit={this.handleSubmit}>
+      <div className="form-container">
+        <div className="item-11">
+          <p className="first-line">
+            You need just 30 seconds to
+            <span> just tell us about who you are a human:</span>
+          </p>
+          <p className="second-line">
+            Don’t worry, you can edit your Profile at anytime.
+          </p>
+        </div>
 
-            <input type="text" name="mentorName" placeholder="Name" onChange={this.handleInput}  />
-            <input type="email" name="email" placeholder="email" onChange={this.handleInput}  />
-            <input type="text" name="jobTitle" placeholder="Job title" onChange={this.handleInput}  />
-            <label>Skills I can teach as a Mentor:</label>
-            <input type="text" name="skills" placeholder="Skills" onChange={this.handleInput}  />
+        <div className="item-12" >
+          <form onSubmit={this.handleSubmit}>
+            <label>Name:</label>
+            <input type="text" name="userName" placeholder="Mary Doe"
+              autoComplete="off"
+              onChange={this.handleInput} />
+
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="marydoe@gmail.com"
+              autoComplete="off"
+              onChange={this.handleInput}  />
+
+            <label>Job Title:</label>
+            <input type="text" name="jobTitle" placeholder="Sr.IOS Developer at Company X"
+              autoComplete="off"
+              onChange={this.handleInput}  />
+
+            <label>Professional skills I want to learn:</label>
+            <input type="text" name="skills" placeholder="Skills"
+              autoComplete="off"
+              onChange={this.handleInput}  />
+
             <label>Interests & Hobbies:</label>
-            <input type="text" name="interests" placeholder="Interests & Hobbies:" onChange={this.handleInput}  />
+            <input type="text" name="interests" placeholder="Interests & Hobbies:"
+              autoComplete="off"
+              onChange={this.handleInput}  />
+
             <label>What I need in my personal life:</label>
-            <input type="text" name="needs" placeholder="I've been working mostly remotely, and..." onChange={this.handleInput}  />
-            <button>Ready for connection!</button>
+            <textarea type="text" name="needs"
+              placeholder="I’ve been working mostly remotely, and it has been tough not to be able to see my family."
+              autoComplete="off"
+              onChange={this.handleInput}  />
+
+            <button className="connect-button">Ready for connection!</button>
           </form>
         </div>
-        <div>Photo here</div>
+
+        <div className="item-13">
+          <img src={profile} />
+          <p className="editProfile">Edit/Change your profile</p>
+        </div>
       </div>
     );
   }

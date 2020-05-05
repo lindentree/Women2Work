@@ -3,6 +3,7 @@ import axios from 'axios';
 import LandingPage from './LandingPage';
 import {Link, NavLink} from 'react-router-dom';
 import form from '../form.css';
+import profile from '../images/profile.png';
 
 class UserForm extends React.Component {
   constructor(props) {
@@ -57,42 +58,44 @@ class UserForm extends React.Component {
         <div className="item-12" >
           <form onSubmit={this.handleSubmit}>
             <label>Name:</label>
-            <input type="text" name="userName" placeholder="Jane Doe" onChange={this.handleInput} />
+            <input type="text" name="userName" placeholder="Jane Doe"
+              autoComplete="off"
+              onChange={this.handleInput} />
 
             <label>Email:</label>
-            < input type = "email"
-            name = "email"
-            placeholder = "janedoe@gmail.com"
-            autoComplete = "off"
-            onChange={this.handleInput}  />
+            <input type="email" name="email" placeholder="janedoe@gmail.com"
+              autoComplete="off"
+              onChange={this.handleInput}  />
 
             <label>Job Title:</label>
-            < input type = "text"
-            name = "jobTitle"
-            placeholder = "Jr.Software Developer"
-            autoComplete = "off"
-            onChange={this.handleInput}  />
+            <input type="text" name="jobTitle" placeholder="Jr.Software Developer"
+              autoComplete="off"
+              onChange={this.handleInput}  />
 
             <label>Professional skills I want to learn:</label>
             <input type="text" name="skills" placeholder="Skills"
-            autoComplete="off"
-            onChange={this.handleInput}  />
+              autoComplete="off"
+              onChange={this.handleInput}  />
 
             <label>Interests & Hobbies:</label>
             <input type="text" name="interests" placeholder="Interests & Hobbies:"
-            autoComplete="off"
-            onChange={this.handleInput}  />
+              autoComplete="off"
+              onChange={this.handleInput}  />
 
             <label>What I need in my personal life:</label>
-            <textarea type="text" name="needs" placeholder="During this Covid-19 pandemic, it has been difficult to look after my children while I’m job hunting.  I would love to connect with working professionals and how they balance work and family."
-            autoComplete="off"
-            onChange={this.handleInput}  />
+            <textarea type="text" name="needs"
+              placeholder="During this Covid-19 pandemic, it has been difficult to look after my children while I’m job hunting.  I would love to connect with working professionals and how they balance work and family."
+              autoComplete="off"
+              onChange={this.handleInput}  />
 
             <button className="connect-button">Ready for connection!</button>
           </form>
         </div>
 
-        <div className="item-13">Photo here</div>
+        <div className="item-13">
+          <img src={profile} />
+          <p className="editProfile">Edit/Change your profile</p>
+        </div>
       </div>
     );
   }

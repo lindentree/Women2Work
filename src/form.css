@@ -24,12 +24,12 @@
 
 .item-13 {
   grid-area: profile;
-  background-color: rgb(247, 238, 252);
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   margin: 20px 0 0 180px;
-  height: 40%;
-  width: 40%;
+  height: 45%;
+  width: 45%;
+  /* background-color: sandybrown; */
 }
 
 input {
@@ -87,4 +87,16 @@ label {
 
 span {
   color: #4A89DC
+}
+
+img {
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+.editProfile {
+  color: #4285F4;
+  text-align: center;
+  font-size: 16px;
 }

@@ -1,12 +1,10 @@
 import React from 'react';
 import UserForm from './UserForm';
-import {BrowserRouter, Route, Link, NavLink} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import userSignup from '../userSignup.css';
 import LandingPage from './LandingPage';
 
 class UserSignup extends React.Component {
-
-
 
   render() {
     const underline = {textDecoration: "none"};
@@ -21,7 +19,8 @@ class UserSignup extends React.Component {
         <div className="item-5">placeholder</div>
 
         <div className="item-6">
-          <NavLink to="/UserForm" style={{...underline, ...textColor}}>Sign Up</NavLink>
+          <NavLink to="/UserForm" style={{...underline, ...textColor}}>
+            Sign Up</NavLink>
         </div>
       </div>
     )
