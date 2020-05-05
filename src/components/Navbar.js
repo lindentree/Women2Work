@@ -1,16 +1,21 @@
 import React from 'react';
 import {Link, NavLink} from 'react-router-dom';
 import styles from '../styles.css';
+import logo from '../images/Logo.png';
 
 
 const Navbar = () => {
   const underline = {textDecoration: "none"};
-  const textColor = {color: "#3EC6FF"};
+  const textColor = {color: "#F55E61"};
 
   return (
     <div className="navbar">
-      <div>LOGO</div>
+      <img className="logo" src={logo} />
+
       <ul className="navUl">
+
+
+
         <li className="navLi">
           <NavLink to="/" style={{ ...underline, ...textColor }}>
             About
