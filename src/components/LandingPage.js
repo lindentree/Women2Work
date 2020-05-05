@@ -5,6 +5,7 @@ import Home from './Home';
 import MentorSignup from './MentorSignup';
 import UserSignup from './UserSignup';
 import Navbar from './Navbar';
+import UserForm from './UserForm';
 
 
 class LandingPage extends React.Component {
@@ -19,11 +20,9 @@ class LandingPage extends React.Component {
             <Route exact path='/' component={Home} />
             <Route path='/MentorSignup' component={MentorSignup} />
             <Route path='/UserSignup' component={UserSignup} />
-            <Route/>
+            <Route path='/UserForm' component={UserForm} />
           </Switch>
         </BrowserRouter>
-
-
 
       </div>
     );
