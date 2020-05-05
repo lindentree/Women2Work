@@ -10,6 +10,7 @@ class Home extends React.Component {
     return (
       <div className="container">
         <div className="item-a">
+        <div  className="big-circle"></div>
           <h1>Mission Statement</h1>
             <p className="red">We believe in women helping women.</p>
             <p className="mission-text">
@@ -19,7 +20,7 @@ class Home extends React.Component {
         </div>
 
         <div className="item-b">
-          <img src={faces} alt="faces" />
+          <img src={faces} alt="faces" className="faces" />
         </div>
 
         <div className="item-c">
