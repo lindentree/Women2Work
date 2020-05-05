@@ -16,7 +16,8 @@ class Home extends React.Component {
         <div className="item-c">
           <h1>Features</h1>
           <p>
-            We want to create a social networking platform that connects mentors, mentees, or any skilled individuals to understand each other as human beings.
+            We want to create a social networking platform
+            for women that connects mentors, mentees, or any skilled individuals to reach their career goals.
           </p>
         </div>
 

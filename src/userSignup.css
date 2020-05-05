@@ -1,9 +1,9 @@
 .user-container {
   display: grid;
-  border: 1px solid red;
-  font-family: sans-serif;
+  /* border: 1px solid red; */
+  font-family: PT sans;
   margin: 0;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 250px 300px 250px;
 }
 
@@ -39,14 +39,6 @@
   grid-area: user3;
   background-color: rgb(244, 247, 211);
   grid-column: 4 / 5;
-  grid-row: 2 / 3;
-
-}
-
-.item-5 {
-  grid-area: user4;
-  background-color: rgb(248, 253, 169);
-  grid-column: 5 / 6;
   grid-row: 2 / 3;
 
 }

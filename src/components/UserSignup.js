@@ -13,10 +13,16 @@ class UserSignup extends React.Component {
       <div className="user-container">
 
         <div className="item-1">Joining the Women2Work Network</div>
-        <div className="item-2">placeholder</div>
-        <div className="item-3">placeholder</div>
-        <div className="item-4">placeholder</div>
-        <div className="item-5">placeholder</div>
+        <div className="item-2">
+          Find a mentor to help you get ready to reenter the job market
+        </div>
+        <div className="item-3">
+          Upgrade your skills using our sponsored skills database and online events
+        </div>
+        <div className="item-4">
+          Connect with other women and share strategies
+        </div>
+
 
         <div className="item-6">
           <NavLink to="/UserForm" style={{...underline, ...textColor}}>
