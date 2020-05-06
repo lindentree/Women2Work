@@ -93,7 +93,7 @@ class UserForm extends React.Component {
               onChange={this.handleInput}  />
 
             <button className="connect-button">
-              <NavLink to="./Member" style={{...underline, ...textColor}}>
+              <NavLink to="./Jane" style={{...underline, ...textColor}}>
                 Ready for connection!
               </NavLink>
             </button>

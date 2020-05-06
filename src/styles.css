@@ -162,15 +162,19 @@ body {
 }
 
 .big-circle {
-  /* Circle */
-  margin-bottom: -30px;
+
+  margin: -120px 0 0 -250px;
   position: absolute;
-  left: -10%;
-  right: 75%;
+  /* left: -10%; */
+  /* right: 75%;
   top: 28%;
   bottom: 20%;
-  border-radius: 50%;
-  background: #F5EDED;
+  border-radius: 50%; */
+
   /* To push circle to background */
   z-index: -1;
+}
+
+.pinkCircle {
+  height: 500px;
 }

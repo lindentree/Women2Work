@@ -24,9 +24,7 @@ class Member extends React.Component {
         <NavMember />
         <div className="member-container">
           <div className="item-20">
-            <p className="hello">
-              How it works
-            </p>
+            <p className="hello">How it works</p>
             <p className="top-text">
               We have over 500 mentors in our community now, and we’ve matched you with some potential mentors based on your interests.
             </p>

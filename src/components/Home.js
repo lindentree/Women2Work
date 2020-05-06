@@ -5,6 +5,7 @@ import match from '../images/match.png';
 import calendar from '../images/calendar.png';
 import badge from '../images/badge.png';
 import dots from '../images/dots.png';
+import pinkCircle from '../images/pinkCircle.png';
 
 class Home extends React.Component {
   render() {
@@ -13,7 +14,9 @@ class Home extends React.Component {
       <Navbar />
       <div className="container">
         <div className="item-a">
-        <div  className="big-circle"></div>
+        <div  className="big-circle">
+          <img className="pinkCircle" src={pinkCircle} />
+        </div>
           <h1>Mission Statement</h1>
             <p className="red">We believe in women helping women.</p>
             <p className="mission-text">
