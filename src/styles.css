@@ -162,15 +162,8 @@ body {
 }
 
 .big-circle {
-
   margin: -120px 0 0 -250px;
   position: absolute;
-  /* left: -10%; */
-  /* right: 75%;
-  top: 28%;
-  bottom: 20%;
-  border-radius: 50%; */
-
   /* To push circle to background */
   z-index: -1;
 }

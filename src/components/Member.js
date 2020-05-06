@@ -14,6 +14,7 @@ import pic8 from '../images/pic8.png';
 import event1 from '../images/event1.png';
 import event2 from '../images/event2.jpg';
 import event3 from '../images/event3.png';
+import yellowCircle from '../images/yellowCircle.png';
 
 class Member extends React.Component {
 
@@ -24,6 +25,10 @@ class Member extends React.Component {
         <NavMember />
         <div className="member-container">
           <div className="item-20">
+            <div className="yellow-circle-wrap">
+              <img src={yellowCircle} className="yellow-circle" />
+            </div>
+
             <p className="hello">How it works</p>
             <p className="top-text">
               We have over 500 mentors in our community now, and we’ve matched you with some potential mentors based on your interests.

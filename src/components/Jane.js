@@ -14,6 +14,7 @@ import pic8 from '../images/pic8.png';
 import event1 from '../images/event1.png';
 import event2 from '../images/event2.jpg';
 import event3 from '../images/event3.png';
+import yellowCircle from '../images/yellowCircle.png';
 
 class Jane extends React.Component {
 
@@ -24,6 +25,8 @@ class Jane extends React.Component {
         <div className="jane-container">
 
         <div className="item-40">
+          <div className="yellow-bubble-wrap">
+            <img src={yellowCircle} className="yellow-bubble" /></div>
           <img src={bubbles} className="jane-bubbles" />
           <p className="hello-jane">Hello Jane, <br />
             <span className="wel">Welcome to our Community!</span>
@@ -31,12 +34,63 @@ class Jane extends React.Component {
 
         </div>
 
-        <div className="item-41">41</div>
-        <div className="item-42">42</div>
-        <div className="item-43">43</div>
-        <div className="item-44">44</div>
-        <div className="item-45">45</div>
-        <div className="item-46">46</div>
+        <div className="item-41">
+          <div className="search">Search for mentors or events...</div>
+        </div>
+
+
+        <div className="item-42">
+          <div className="inside-text">
+            <p>Networking</p>
+            <p>
+              Provide Guidance to 3 Mentees at a time Host Workshops Build a Personal Brand Receive a Certified Mentor Badge
+            </p>
+            <div className="red-btn">Networking</div>
+          </div>
+        </div>
+
+        <div className="item-43">
+          <div div className="inside-text">
+            <p>Find an Event</p>
+            <p>
+              Provide Guidance to 3 Mentees at a time
+              Host Workshops
+              Build a Personal Brand
+              Receive a Certified Mentor Badge
+            </p>
+            <div className="red-btn">Find an Event</div>
+          </div>
+        </div>
+
+
+        <div className="item-44">
+          <div className="inside-text">
+            <p>Be a Mentor</p>
+            <p>
+              Provide Guidance to 3 Mentees at a time
+              Host Workshops
+              Build a Personal Brand
+              Receive a Certified Mentor Badge
+            </p>
+            <div className="red-btn">Be a Mentor</div>
+          </div>
+        </div>
+
+        <div className="item-45">
+          <div className="inside-text">
+            <p>Be a Mentee</p>
+            <p>
+              Provide Guidance to 3 Mentees at a time
+              Host Workshops
+              Build a Personal Brand
+              Receive a Certified Mentor Badge
+            </p>
+            <div className="red-btn">Be a Mentee</div>
+          </div>
+        </div>
+
+
+        <div className="item-46"></div>
 
         </div>
       </div>

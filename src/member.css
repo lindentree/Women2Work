@@ -268,6 +268,13 @@
   color: #F55E61;
 }
 
-/* .sponser-title {
-  font-size: 16px;
-} */
+.yellow-circle-wrap {
+  margin: 0 0 0 -50px;
+  position: absolute;
+  /* To push circle to background */
+  z-index: -1;
+}
+
+.yellow-circle {
+  height: 200px;
+}
