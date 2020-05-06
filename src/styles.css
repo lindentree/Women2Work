@@ -51,9 +51,9 @@ body {
 
 .feat-text {
   font-family: Roboto Light;
-  font-size: 14px;
+  font-size: 15px;
   width: 80%;
-  /* margin-top: 0; */
+  margin-top: -10px;
 }
 
 .faces {
@@ -87,7 +87,7 @@ body {
 }
 
 .item-d img {
-  width: 250px;
+  width: 200px;
 }
 
 .item-e {
@@ -99,7 +99,7 @@ body {
   margin-left: -40px;
 }
 .item-e img {
-  width: 250px;
+  width: 200px;
 }
 
 .item-f {
@@ -110,7 +110,7 @@ body {
   width: 80%;
 }
 .item-f img {
-  width: 250px;
+  width: 200px;
 }
 
 .item-g {
@@ -122,7 +122,7 @@ body {
   margin-left: -40px;
 }
 .item-g img {
-  width: 250px;
+  width: 200px;
 }
 
 .item-h {

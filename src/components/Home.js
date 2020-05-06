@@ -1,10 +1,12 @@
 import React from 'react';
 import Navbar from './Navbar';
+import Footer from './Footer';
 import faces from '../images/faces.png';
 import match from '../images/match.png';
 import calendar from '../images/calendar.png';
 import badge from '../images/badge.png';
 import dots from '../images/dots.png';
+import star from '../images/star.png';
 import pinkCircle from '../images/pinkCircle.png';
 import {NavLink} from 'react-router-dom';
 
@@ -42,51 +44,48 @@ class Home extends React.Component {
         </div>
 
         <div className="item-c">
-          <h1>Features</h1>
-          <p className="mission-text">
-          Join our community of women looking to advance their career.
-          Attend an event or find an accountability partner.
+
+          <p className="mission-text red">
+          Join our community of women looking to advance their careers.
           </p>
         </div>
 
         <div className="item-d">
-          <img src={match} />
+          <img src={match} className="icon" />
           <h4>Personalized Matchmaking</h4>
           <p className="feat-text">
-            Connect with other peers and mentors based on industry, hobbies, and skills.
+            Upgrade your skills with the help of a mentor or find a mentee to connect with and help them on their career journey.
           </p>
         </div>
 
         <div className="item-e">
-          <img src={badge} />
-          <h4>Certified Mentor Badge</h4>
+          <img src={badge} className="icon" />
+          <h4>Networking</h4>
           <p className="feat-text">
-            Mentors who complete the certification process will receive a certified mentor badge they can proudly present on LinkedIn.
+            Connect with peers and mentors based on industry, hobbies, and skills.
           </p>
         </div>
 
         <div className="item-f">
-          <img src={calendar} />
-          <h4>Curated Events and Workshops</h4>
+          <img src={calendar} className="icon"/>
+          <h4>Events and Workshops</h4>
           <p className="feat-text">
             Connect with others based on your passion, skills, and hobbies.
           </p>
         </div>
 
         <div className="item-g">
-          <img src={match} />
-          <h4>Big Sister Program</h4>
+          <img src={star} className="icon"/>
+          <h4>Referral Program</h4>
           <p className="feat-text">
-            Connect with other peers and mentors based on industry, hobbies, and skills.
+            Mentees who complete W2W Guidelines and are approved by Mentors can enter the referral program.
           </p>
         </div>
 
-        <div className="item-h">
-          Social Media Links Here
-        </div>
+
 
       </div>
-
+      <Footer />
       </div>
     );
   }
