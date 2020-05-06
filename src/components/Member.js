@@ -2,6 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import NavMember from './NavMember';
 import member from '../member.css';
+import Footer from './Footer';
 import bubbles from '../images/dots.png';
 import pic1 from '../images/pic1.png';
 import pic2 from '../images/pic2.png';
@@ -146,6 +147,7 @@ class Member extends React.Component {
             <img src={bubbles} className="bubbles" />
           </div>
         </div>
+        <Footer />
       </div>
     )
   }
