@@ -5,13 +5,9 @@ import LandingPage from './components/LandingPage';
 class App extends React.Component {
 
   render() {
-    return (
-      <div>
+    return <LandingPage/>
 
-        <LandingPage/>
-
-      </div>
-    );
+  
   }
 
 }
