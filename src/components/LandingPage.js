@@ -7,7 +7,6 @@ import Navbar from './Navbar';
 import UserForm from './UserForm';
 import Member from './Member';
 
-
 class LandingPage extends React.Component {
   render() {
 
@@ -19,7 +18,7 @@ class LandingPage extends React.Component {
 
             <Route path='/Signup' component={UserSignup} />
             <Route path='/UserForm' component={UserForm} />
-            <Route path='/Signin' component={Member} />
+            <Route path='/Member' component={Member} />
           </Switch>
         </BrowserRouter>
       </div>

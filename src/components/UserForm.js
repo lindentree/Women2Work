@@ -44,6 +44,9 @@ class UserForm extends React.Component {
   }
 
   render() {
+    const underline = {textDecoration: "none"};
+    const textColor = {color: "white"};
+
     return (
       <div className="form-container">
         <div className="item-11">
@@ -89,7 +92,11 @@ class UserForm extends React.Component {
               autoComplete="off"
               onChange={this.handleInput}  />
 
-            <button className="connect-button">Ready for connection!</button>
+            <button className="connect-button">
+              <NavLink to="./Member" style={{...underline, ...textColor}}>
+                Ready for connection!
+              </NavLink>
+            </button>
           </form>
         </div>
 
