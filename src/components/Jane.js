@@ -11,6 +11,9 @@ import Footer from './Footer';
 class Jane extends React.Component {
 
   render() {
+    const underline = {textDecoration: "none"};
+    const textColor = {color: "white"};
+
     return (
       <div>
         <NavMember />
@@ -35,10 +38,9 @@ class Jane extends React.Component {
               <img src={smiley} className="smiley" />
             </div>
 
-
-            <p>Networking</p>
+            <p className="second-title">Networking</p>
             <p>
-              Provide Guidance to 3 Mentees at a time Host Workshops Build a Personal Brand Receive a Certified Mentor Badge
+              Connect with others based on professional skills, industry, personal hobbies and other interests
             </p>
             <div className="red-btn">Networking</div>
           </div>
@@ -51,12 +53,9 @@ class Jane extends React.Component {
               <img src={smiley} className="smiley" />
             </div>
 
-            <p>Find an Event</p>
+            <p className="second-title">Find an Event</p>
             <p>
-              Provide Guidance to 3 Mentees at a time
-              Host Workshops
-              Build a Personal Brand
-              Receive a Certified Mentor Badge
+              Find out more about mentors, hear from industry experts, or meet others at an informal Virtual Happy Hour
             </p>
             <div className="red-btn">Find an Event</div>
           </div>
@@ -70,12 +69,12 @@ class Jane extends React.Component {
               <img src={smiley} className="smiley" />
             </div>
 
-            <p>Be a Mentor</p>
+            <p className="second-title">Be a Mentor</p>
             <p>
               Provide Guidance to 3 Mentees at a time
               Host Workshops
               Build a Personal Brand
-              Receive a Certified Mentor Badge
+
             </p>
             <div className="red-btn">Be a Mentor</div>
           </div>
@@ -83,19 +82,20 @@ class Jane extends React.Component {
 
         <div className="item-45">
           <div className="inside-text">
-
             <div className="smiley-crop">
               <img src={smiley} className="smiley" />
             </div>
 
-            <p>Be a Mentee</p>
+            <p className="second-title">Be a Mentee</p>
             <p>
-              Provide Guidance to 3 Mentees at a time
-              Host Workshops
-              Build a Personal Brand
-              Receive a Certified Mentor Badge
+              Connect one on one with a mentor
+              for personalized guidance on how to reach your goals
             </p>
-            <div className="red-btn">Be a Mentee</div>
+            <div className="red-btn">
+              <NavLink to="./BeMentee" style={{...underline, ...textColor}}>
+                Be a Mentee
+              </NavLink>
+            </div>
           </div>
         </div>
 

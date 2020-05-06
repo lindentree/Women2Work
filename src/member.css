@@ -2,7 +2,7 @@
   display: grid;
   font-family: Roboto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 300px 300px 300px 300px;
+  grid-template-rows: 300px 300px 300px 400px;
   /* width: 90%; */
   width: 90%;
   margin: 0 60px;

@@ -6,9 +6,14 @@ import calendar from '../images/calendar.png';
 import badge from '../images/badge.png';
 import dots from '../images/dots.png';
 import pinkCircle from '../images/pinkCircle.png';
+import {NavLink} from 'react-router-dom';
 
 class Home extends React.Component {
   render() {
+
+  const underline = {textDecoration: "none"};
+  const textColor = {color: "white"};
+
     return (
       <div>
       <Navbar />
@@ -17,12 +22,19 @@ class Home extends React.Component {
         <div  className="big-circle">
           <img className="pinkCircle" src={pinkCircle} />
         </div>
-          <h1>Mission Statement</h1>
-            <p className="red">We believe in women helping women.</p>
+          <h1>Women2Work</h1>
+            <p className="red">Women helping women soar in their careers.</p>
             <p className="mission-text">
-              We want to create a social networking platform
-              for women that connects mentors, mentees, or any skilled individuals to reach their career goals.
+              Join a network. Attend an event. <br />
+              Upgrade your skills. Find a mentor.
             </p>
+
+            <div className="start">
+              <NavLink to="Signup" style={{...underline, ...textColor}}>
+                Get Started
+              </NavLink>
+            </div>
+
         </div>
 
         <div className="item-b">

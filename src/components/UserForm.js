@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Navbar from './Navbar';
+import Footer from './Footer';
 import LandingPage from './LandingPage';
 import {Link, NavLink} from 'react-router-dom';
 import form from '../form.css';
@@ -48,6 +49,8 @@ class UserForm extends React.Component {
     const textColor = {color: "white"};
 
     return (
+      <div>
+      <Navbar />
       <div className="form-container">
         <div className="item-11">
           <p className="first-line">
@@ -101,12 +104,17 @@ class UserForm extends React.Component {
         </div>
 
         <div className="item-13">
+
           <div className="image-cropper">
             <img className="profile-pic" src={pic1} />
           </div>
-          <p>Edit/Change your profile</p>
+            <p>Edit/Change your profile</p>
         </div>
+
+
       </div>
+      <Footer />
+    </div>
     );
   }
 }

@@ -27,14 +27,26 @@ body {
 .red {
   color: #F55E61;
   font-size: 20px;
-  margin-top: 5px;
   font-family: Roboto;
+  margin: 5px 0 5px 30px;
 }
 
 .mission-text {
   font-family: Roboto Light;
   font-size: 20px;
   width: 80%;
+  margin: 0 0 0 30px;
+}
+
+.start {
+  height: 35px;
+  width: 220px;
+  background-color: #F55E61;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: 40px 0 0 30px;
+  padding-top: 10px;
 }
 
 .feat-text {

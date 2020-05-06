@@ -20,7 +20,7 @@ class LandingPage extends React.Component {
             <Route path='/Signup' component={UserSignup} />
             <Route path='/UserForm' component={UserForm} />
             <Route path='/Jane' component={Jane} />
-            <Route path='/Member' component={Member} />
+            <Route path='/BeMentee' component={Member} />
           </Switch>
         </BrowserRouter>
       </div>
