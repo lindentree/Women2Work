@@ -1,7 +1,8 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import NavMember from './NavMember';
 
-class UserMain extends React.Component {
+class Member extends React.Component {
 
 
   render() {
@@ -13,4 +14,4 @@ class UserMain extends React.Component {
   }
 }
 
-export default UserMain;
+export default Member;

@@ -19,15 +19,11 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li className="navLi">
-          <NavLink to="Signin" style={{ ...underline, ...textColor }}>
-            Sign In
+          <NavLink to="UserSignup" style={{ ...underline, ...textColor }}>
+            Inbox
           </NavLink>
         </li>
-        <li className="navLi">
-          <NavLink to="Signup" style={{ ...underline, ...textColor }}>
-            Sign Up
-          </NavLink>
-        </li>
+
       </ul>
     </div>
   );

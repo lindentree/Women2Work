@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './Navbar';
 import UserForm from './UserForm';
 import {Link, NavLink} from 'react-router-dom';
 import userSignup from '../userSignup.css';
@@ -13,7 +14,7 @@ class UserSignup extends React.Component {
     return (
       <div className="user-container">
 
-        <div className="item-1">Be a Women2Work Mentor</div>
+        <div className="item-1">Join Women2Work</div>
 
         <div className="item-2">
           Find a mentor to help you get ready to reenter the job market

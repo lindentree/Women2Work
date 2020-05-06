@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import Navbar from './Navbar';
 import LandingPage from './LandingPage';
 import {Link, NavLink} from 'react-router-dom';
 import form from '../form.css';

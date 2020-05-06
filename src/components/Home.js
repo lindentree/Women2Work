@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './Navbar';
 import faces from '../images/faces.png';
 import match from '../images/match.png';
 import calendar from '../images/calendar.png';
@@ -8,6 +9,8 @@ import dots from '../images/dots.png';
 class Home extends React.Component {
   render() {
     return (
+      <div>
+      <Navbar />
       <div className="container">
         <div className="item-a">
         <div  className="big-circle"></div>
@@ -66,6 +69,8 @@ class Home extends React.Component {
         <div className="item-h">
           Social Media Links Here
         </div>
+
+      </div>
 
       </div>
     );
