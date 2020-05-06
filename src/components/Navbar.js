@@ -14,8 +14,6 @@ const Navbar = () => {
 
       <ul className="navUl">
 
-
-
         <li className="navLi">
           <NavLink to="/" style={{ ...underline, ...textColor }}>
             About

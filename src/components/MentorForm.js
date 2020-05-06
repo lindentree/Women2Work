@@ -3,7 +3,7 @@ import axios from 'axios';
 import LandingPage from './LandingPage';
 import {Link, NavLink} from 'react-router-dom';
 import form from '../form.css';
-import profile from '../images/profile.png';
+import pic1 from '../images/pic1.png';
 
 class MentorForm extends React.Component {
   constructor(props) {
@@ -63,7 +63,7 @@ class MentorForm extends React.Component {
               onChange={this.handleInput} />
 
             <label>Email:</label>
-            <input type="email" name="email" placeholder="marydoe@gmail.com"
+            <input type="email" name="email"    placeholder="marydoe@gmail.com"
               autoComplete="off"
               onChange={this.handleInput}  />
 
@@ -93,7 +93,7 @@ class MentorForm extends React.Component {
         </div>
 
         <div className="item-13">
-          <img src={profile} />
+          <img src={pic1} />
           <p className="editProfile">Edit/Change your profile</p>
         </div>
       </div>

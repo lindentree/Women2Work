@@ -9,7 +9,7 @@
 
 .item-1 {
   grid-area: title;
-  background-color: rgb(245, 204, 142);
+  /* background-color: rgb(245, 204, 142); */
   grid-column: 1 / 7;
   grid-row: 1 / 2;
   font-size: 40px;
@@ -20,7 +20,7 @@
 
 .item-2 {
   grid-area: users1;
-  background-color: rgb(215, 245, 250);
+  /* background-color: rgb(215, 245, 250); */
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 
@@ -29,7 +29,7 @@
 
 .item-3 {
   grid-area: user2;
-  background-color: rgb(213, 176, 248);
+  /* background-color: rgb(213, 176, 248); */
   grid-column: 3 / 4;
   grid-row: 2 / 3;
 
@@ -37,7 +37,7 @@
 
 .item-4 {
   grid-area: user3;
-  background-color: rgb(244, 247, 211);
+  /* background-color: rgb(244, 247, 211); */
   grid-column: 4 / 5;
   grid-row: 2 / 3;
 

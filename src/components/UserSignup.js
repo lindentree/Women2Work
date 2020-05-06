@@ -9,13 +9,16 @@ class UserSignup extends React.Component {
   render() {
     const underline = {textDecoration: "none"};
     const textColor = {color: "#3EC6FF"};
+
     return (
       <div className="user-container">
 
-        <div className="item-1">Joining the Women2Work Network</div>
+        <div className="item-1">Be a Women2Work Mentor</div>
+
         <div className="item-2">
           Find a mentor to help you get ready to reenter the job market
         </div>
+
         <div className="item-3">
           Upgrade your skills using our sponsored skills database and online events
         </div>

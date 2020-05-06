@@ -3,7 +3,7 @@ import axios from 'axios';
 import LandingPage from './LandingPage';
 import {Link, NavLink} from 'react-router-dom';
 import form from '../form.css';
-import profile from '../images/profile.png';
+import pic1 from '../images/pic1.png';
 
 class UserForm extends React.Component {
   constructor(props) {
@@ -93,8 +93,10 @@ class UserForm extends React.Component {
         </div>
 
         <div className="item-13">
-          <img src={profile} />
-          <p className="editProfile">Edit/Change your profile</p>
+          <div className="image-cropper">
+            <img className="profile-pic" src={pic1} />
+          </div>
+          <p>Edit/Change your profile</p>
         </div>
       </div>
     );
