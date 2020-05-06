@@ -171,3 +171,18 @@ body {
 .pinkCircle {
   height: 500px;
 }
+
+.footer {
+  height: 150px;
+  background-color: #322F2E;
+  color: white;
+  font-family: Roboto;
+  /* font-weight: lighter; */
+  font-style: 9px;
+  padding: 90px 0 0 0px;
+}
+
+.footer p {
+  float: right;
+  margin-right: 30px;
+}

@@ -2,19 +2,11 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import NavMember from './NavMember';
 import jane from '../jane.css';
+import footer from './Footer';
 import bubbles from '../images/dots.png';
-import pic1 from '../images/pic1.png';
-import pic2 from '../images/pic2.png';
-import pic3 from '../images/pic3.png';
-import pic4 from '../images/pic4.png';
-import pic5 from '../images/pic5.png';
-import pic6 from '../images/pic6.png';
-import pic7 from '../images/pic7.png';
-import pic8 from '../images/pic8.png';
-import event1 from '../images/event1.png';
-import event2 from '../images/event2.jpg';
-import event3 from '../images/event3.png';
+import smiley from '../images/smiley.png';
 import yellowCircle from '../images/yellowCircle.png';
+import Footer from './Footer';
 
 class Jane extends React.Component {
 
@@ -28,19 +20,22 @@ class Jane extends React.Component {
           <div className="yellow-bubble-wrap">
             <img src={yellowCircle} className="yellow-bubble" /></div>
           <img src={bubbles} className="jane-bubbles" />
-          <p className="hello-jane">Hello Jane, <br />
-            <span className="wel">Welcome to our Community!</span>
-          </p>
+          <p  className="hello-jane"> Hello Jane, </p>
+          <p className="wel"> Welcome to our Community! </p>
 
         </div>
 
-        <div className="item-41">
-          <div className="search">Search for mentors or events...</div>
-        </div>
+
 
 
         <div className="item-42">
           <div className="inside-text">
+
+            <div className="smiley-crop">
+              <img src={smiley} className="smiley" />
+            </div>
+
+
             <p>Networking</p>
             <p>
               Provide Guidance to 3 Mentees at a time Host Workshops Build a Personal Brand Receive a Certified Mentor Badge
@@ -51,6 +46,11 @@ class Jane extends React.Component {
 
         <div className="item-43">
           <div div className="inside-text">
+
+            <div className="smiley-crop">
+              <img src={smiley} className="smiley" />
+            </div>
+
             <p>Find an Event</p>
             <p>
               Provide Guidance to 3 Mentees at a time
@@ -65,6 +65,11 @@ class Jane extends React.Component {
 
         <div className="item-44">
           <div className="inside-text">
+
+            <div className="smiley-crop">
+              <img src={smiley} className="smiley" />
+            </div>
+
             <p>Be a Mentor</p>
             <p>
               Provide Guidance to 3 Mentees at a time
@@ -78,6 +83,11 @@ class Jane extends React.Component {
 
         <div className="item-45">
           <div className="inside-text">
+
+            <div className="smiley-crop">
+              <img src={smiley} className="smiley" />
+            </div>
+
             <p>Be a Mentee</p>
             <p>
               Provide Guidance to 3 Mentees at a time
@@ -93,6 +103,7 @@ class Jane extends React.Component {
         <div className="item-46"></div>
 
         </div>
+        <Footer />
       </div>
     )
   }
