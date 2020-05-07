@@ -13,7 +13,7 @@ class LandingPage extends React.Component {
 
     return (
      
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <div>
             <Route exact path='/' component={Home} />
 
